@@ -54,6 +54,7 @@
 }
 #botaonav:hover{
     background-color: #ff4d00;
+    transform: scale(1.1);
 }
 #linkbutton{
     color: black;
@@ -62,9 +63,14 @@
 }
 /* SESSÃO PRINCIPAL */
 #sessaohero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 110px;
     padding-left: 100px;
+    padding-right: 140px;
     width: 100%;
     height: fit-content;
     background-color: black;
@@ -92,7 +98,8 @@ h1{
     transition: 0.2s ease;
 }
 #bt1:hover{
-    background-color: #86b42a;
+    background-color: #cfee21;
+    transform: scale(1.1);
 }
 #bt1text{
     font-family: "Inter", sans-serif;
@@ -108,9 +115,98 @@ h1{
 }
 #bt2:hover{
     background-color: #333333;
+    transform: scale(1.1);
 }
 #bt2text{
     font-family: "Inter", sans-serif;
     font-size: 20px;
     color: white;
+}
+/* QUADRADOS */
+#quadrados{
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    gap: 15px;
+}
+#lampada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    transition: 0.3s ease;
+    border-radius: 4px;
+    background: linear-gradient(45deg, #6A1B9A 0%, #7B2BE2 50%, #244CFF 100%);
+}
+#monitor{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    border-radius: 4px;
+    background: linear-gradient(45deg, #73A900 0%, #A8E61D 55%, #c9eb4f 100%);
+}
+#barras{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    border-radius: 4px;
+    background: linear-gradient(45deg, #073B91 0%, #0759D9 50%, #579bee 100%);
+}
+#w{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    border-radius: 4px;
+    background: linear-gradient(45deg, #FF6535 0%, #FF7135 55%, #ffcb20 100%);
+}
+.itens{
+    width: 70%;
+    height: 70%;
+}
+#witen{
+    width: 130px;
+}
+.quad:hover{
+    transform: scale(1.1);
+}
+#sessaohero {
+    position: relative;
+}
+
+#sessaohero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 70%;
+    height: 1px;
+    background: #757474;
+}
+/* SESSÃO CARDS */
+#sessaocards{
+    background-color: black;
+    width: 100%;
+    height: 200px;
+}
+#card1{
+    background-color: white;
+}
+#card2{
+    background-color: white;
+
+}
+#card2{
+    background-color: white;
+
 }
