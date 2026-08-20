@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+:root{
+    --branco-texto: #EDEBEB;
+    --roxo: #6B2CF8;
+    --laranja: #FF763A;
+    --amarelo: #B8F939;
+}
+/* CABEÇALHO */
+#navegacao{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+}
+#container{
+    max-width: 1400px;
+    margin: 0px 120px 0px 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+#links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px;
+    color: white
+}
+.linknav{
+    font-family: "Inter", sans-serif;
+    color: var(--branco-texto);
+    transition: 0.3s ease;
+}
+.linknav:hover{
+    color: var(--roxo);
+    font-size: 17px;
+}
+#logo1{
+    width: 85px;
+}
+#botaonav{
+    padding: 12px;
+    border-radius: 10px;
+    background-color: var(--laranja);
+    transition: 0.3s ease;
+}
+#botaonav:hover{
+    background-color: #ff4d00;
+}
+#linkbutton{
+    color: black;
+    font-family: var(--interfont);
+    font-size: 15px;
+}
+/* SESSÃO PRINCIPAL */
+#sessaohero{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+}
+h1{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 70px;
+    max-width: 450px;
+    padding-bottom: 40px;
+}
+#phero{
+    color: var(--branco-texto);
+    font-family: "Inter", sans-serif; 
+    font-size: 20px;
+    max-width: 450px;
+    padding-bottom: 50px;
+}
+#bt1{
+    width: 150px;
+    padding: 13px;
+    border-radius: 10px;
+    background-color: var(--amarelo);
+    margin-right: 35px;
+    transition: 0.2s ease;
+}
+#bt1:hover{
+    background-color: #86b42a;
+}
+#bt1text{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: black;
+}
+#bt2{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    border: 2px solid white;
+    transition: 0.2s ease;
+}
+#bt2:hover{
+    background-color: #333333;
+}
+#bt2text{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: white;
+}
