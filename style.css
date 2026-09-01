@@ -61,6 +61,33 @@
     font-family: var(--interfont);
     font-size: 15px;
 }
+
+/* RESPONSIVIDADE - NAV */
+
+@media (max-width: 768px) {
+
+    #container {
+        margin: 0;
+        padding: 15px 25px;
+    }
+
+    #links {
+        display: none;
+    }
+
+    #logo1 {
+        width: 75px;
+    }
+
+    #botaonav {
+        padding: 10px 12px;
+    }
+
+    #linkbutton {
+        font-size: 14px;
+    }
+
+}
 /* SESSÃO PRINCIPAL */
 #sessaohero{
     display: flex;
@@ -193,6 +220,90 @@ h1{
     height: 1px;
     background: #757474;
 }
+/* =========================
+   RESPONSIVIDADE - HERO
+========================= */
+
+@media (max-width: 1000px) {
+
+    #sessaohero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 70px 40px 90px;
+        text-align: center;
+    }
+
+    #sessaohero h1 {
+        font-size: 55px;
+        line-height: 1.08;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    #phero {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    #quadrados {
+        display: none;
+    }
+
+}
+@media (max-width: 600px) {
+
+    #sessaohero {
+        padding: 55px 25px 75px;
+    }
+
+    #sessaohero h1 {
+        font-size: 38px;
+        line-height: 1.1;
+        max-width: 100%;
+        padding-bottom: 25px;
+    }
+
+    #phero {
+        font-size: 17px;
+        line-height: 1.5;
+        max-width: 100%;
+        padding-bottom: 30px;
+    }
+
+
+    /* BOTÕES */
+
+    #botaohero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    #bt1,
+    #bt2 {
+        width: 170px;
+        height: 44px;
+        margin: 0;
+        padding: 0;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    #bt1text,
+    #bt2text {
+        font-size: 15px;
+    }
+
+
+    /* REMOVE OS QUADRADOS */
+
+    #quadrados {
+        display: none;
+    }
+
+}
 /* SESSÃO CARDS */
 
 #cardsection {
@@ -282,6 +393,101 @@ h3{
     transform: scale(1.1);
 }
 
+/* =========================
+   RESPONSIVIDADE - CARDS
+========================= */
+
+@media (max-width: 1000px) {
+
+    #cardsection {
+        padding-top: 90px;
+        padding-bottom: 60px;
+    }
+
+    #divtexto {
+        max-width: 600px;
+        margin-bottom: 55px;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    #divtexto h2 {
+        font-size: 36px;
+    }
+
+    #cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .teste {
+        width: 420px;
+        min-height: 370px;
+        padding: 22px;
+    }
+
+    .cardimg {
+        height: 225px;
+    }
+
+}
+@media (max-width: 600px) {
+
+    #cardsection {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    #divtexto {
+        max-width: 100%;
+        padding: 0 25px;
+        margin-bottom: 45px;
+    }
+
+    #divtexto h2 {
+        font-size: 30px;
+        line-height: 1.15;
+        margin-bottom: 20px;
+    }
+
+    #divtexto > div > p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 45px;
+    }
+
+    #cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .teste {
+        width: calc(100% - 60px);
+        max-width: 340px;
+        min-height: 330px;
+        padding: 18px;
+    }
+
+    .cardimg {
+        height: 190px;
+        width: 100%;
+    }
+
+    .cardseta {
+        width: 35px;
+    }
+
+    #linkcard {
+        font-size: 18px;
+    }
+
+}
 /* WHATSAPP FLUTUANTE */
 #whatsflutuante{
     width: 95px;
@@ -372,15 +578,16 @@ h3{
     color: var(--laranja);
     font-weight: bold;
 }
+
 /* DEPOIMENTOS */
 #super-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
 .depoimentos{
     border-radius: 10px;
@@ -389,7 +596,7 @@ h3{
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 50px 20px;
+    padding: 10px 10px;
     max-width: 900px;
     position: relative;
     overflow: hidden;
@@ -428,12 +635,402 @@ h3{
     font-size: 14px;
 }
 #super-container h3{
+    color: whitesmoke;
     font-family: "Inter", sans-serif;
     font-size: 30px;
+    margin-bottom: 30px;
 }
 #super-container h3 em{
     font-family: "Inter", sans-serif;
     color: var(--laranja);
     font-weight: bold;
 }
-/* FORMULÁRIO */
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 1000px){
+
+    #super-container{
+        padding-top: 35px;
+        padding-bottom: 45px;
+    }
+
+    #super-container h3{
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .depoimentos{
+        width: 90%;
+        max-width: 700px;
+        padding: 8px;
+    }
+
+    .depoimentos .slide{
+        padding: 30px 30px;
+    }
+
+    .depoimentos i{
+        font-size: 50px;
+    }
+
+    .depoimentos p.depoi-txt{
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .slide .person img{
+        width: 36px;
+        height: 36px;
+    }
+
+    .slide .person{
+        gap: 12px;
+    }
+
+    .slide .person p.nome-person{
+        font-size: 16px;
+    }
+
+    .slide .person p.func-person{
+        font-size: 13px;
+    }
+
+    /* Remove as setas no tablet */
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none;
+    }
+}
+/* =========================
+   CELULAR
+   ========================= */
+
+@media (max-width: 600px){
+
+    #super-container{
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    #super-container h3{
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .depoimentos{
+        width: calc(100% - 40px);
+        max-width: 360px;
+        padding: 5px;
+        border-radius: 8px;
+    }
+
+    .depoimentos .slide{
+        padding: 25px 22px;
+    }
+
+    .depoimentos i{
+        font-size: 40px;
+    }
+
+    .depoimentos p.depoi-txt{
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+    .slide .person img{
+        width: 32px;
+        height: 32px;
+    }
+
+    .slide .person{
+        gap: 10px;
+    }
+
+    .slide .person p.nome-person{
+        font-size: 15px;
+    }
+
+    .slide .person p.func-person{
+        font-size: 12px;
+    }
+
+    /* Remove as setas no celular */
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none;
+    }
+}
+/* RODAPÉ */
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 80px 6% 25px;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.6fr;
+    gap: 60px;
+}
+/* =========================
+   MARCA
+========================= */
+
+.footer-brand h2 {
+    margin: 0 0 15px;
+
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.footer-brand p {
+    max-width: 280px;
+
+    margin: 0;
+
+    color: #999;
+    font-size: 15px;
+    line-height: 1.6;
+}
+/* =========================
+   COLUNAS
+========================= */
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-column h3 {
+    margin: 0 0 12px;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-column a {
+    width: fit-content;
+
+    color: #999;
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.2s ease;
+}
+
+.footer-column a:hover {
+    color: #fff;
+}
+/* =========================
+   CONTATO
+========================= */
+
+.footer-email {
+    color: #fff !important;
+    font-size: 14px !important;
+    margin-bottom: 2px;
+}
+
+.footer-email:hover {
+    color: #ccc !important;
+}
+
+.footer-contact p {
+    max-width: 270px;
+
+    margin: 4px 0 10px;
+
+    color: #999;
+    font-size: 14px;
+    line-height: 1.6;
+}
+/* =========================
+   BOTÃO
+========================= */
+
+.footer-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    width: fit-content;
+
+    padding: 12px 18px;
+
+    background-color: #fff;
+    color: #000 !important;
+
+    border-radius: 6px;
+
+    font-size: 14px !important;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.footer-button:hover {
+    background-color: #eaeaea;
+    transform: translateY(-2px);
+}
+
+.footer-button i {
+    font-size: 13px;
+}
+/* =========================
+   PARTE INFERIOR
+========================= */
+
+.footer-bottom {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 70px auto 0;
+    padding-top: 25px;
+
+    border-top: 1px solid #222;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    color: #666;
+    font-size: 13px;
+}
+/* =========================
+   REDES SOCIAIS
+========================= */
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social a {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #222;
+    border-radius: 50%;
+
+    color: #999;
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.footer-social a:hover {
+    color: #fff;
+    border-color: #555;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .footer {
+        padding: 65px 30px 25px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 45px 35px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-bottom {
+        margin-top: 55px;
+    }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .footer {
+        padding: 55px 25px 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-brand h2 {
+        font-size: 28px;
+    }
+
+    .footer-brand p {
+        max-width: 300px;
+    }
+
+    .footer-column {
+        gap: 10px;
+    }
+
+    .footer-column h3 {
+        margin-bottom: 8px;
+    }
+
+    .footer-contact p {
+        max-width: 320px;
+    }
+
+    .footer-bottom {
+        margin-top: 45px;
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+}
+@media (max-width: 1000px) {
+    .depoimentos .swiper-button-next,
+    .depoimentos .swiper-button-prev {
+        display: none !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .depoimentos .swiper-button-next,
+    .depoimentos .swiper-button-prev {
+        display: none !important;
+    }
+}
