@@ -359,7 +359,7 @@ em{
     min-height: 400px;
     padding: 24px;
     box-sizing: border-box;
-    text-align: left; 
+    text-align: center; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
