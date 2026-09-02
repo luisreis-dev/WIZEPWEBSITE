@@ -508,7 +508,7 @@ h3{
 /* SESSÃO FAQ */
 
 #faqsection{
-    background-image: url(assets/bg2.svg);
+    background-color: whitesmoke;
     background-size: cover;
     width: 100%;
     height: fit-content;
@@ -545,6 +545,7 @@ h3{
 #faqlist .resposta{
     color: #1d1d1d;
     padding: 0px 14px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)
     background-color: rgba(255, 255, 255, 0.970);
     max-height: 0;
     overflow: hidden;
