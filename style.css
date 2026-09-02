@@ -546,7 +546,6 @@ h3{
     color: #1d1d1d;
     padding: 0px 14px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)
-    background-color: rgba(255, 255, 255, 0.970);
     max-height: 0;
     overflow: hidden;
     transition: max-height .5s, padding .5s;
