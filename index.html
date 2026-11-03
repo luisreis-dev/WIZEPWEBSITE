@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WIZEP | Agência de criação e desenvolvimento digital</title>
+  <meta name="description" content="A WIZEP cria sites institucionais, landing pages, lojas virtuais e identidades visuais para empresas, pequenos negócios, empreendedores e profissionais autônomos.">
+  <meta name="theme-color" content="#FFD400">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23FFD400'/%3E%3Cpath d='M18 26l16 50 16-36 16 36 16-50' fill='none' stroke='%230E0E10' stroke-width='11' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Caveat+Brush&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Biblioteca de desenhos reutilizados -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-spark" viewBox="0 0 100 100"><path d="M50 4C55 32 68 45 96 50 68 55 55 68 50 96 45 68 32 55 4 50 32 45 45 32 50 4Z"/></symbol>
+    <symbol id="i-burst" viewBox="0 0 200 200"><polygon points="198,100 175.3,120.2 184.9,149 155.2,155.2 149,184.9 120.2,175.3 100,198 79.8,175.3 51,184.9 44.8,155.2 15.1,149 24.7,120.2 2,100 24.7,79.8 15.1,51 44.8,44.8 51,15.1 79.8,24.7 100,2 120.2,24.7 149,15.1 155.2,44.8 184.9,51 175.3,79.8"/></symbol>
+    <symbol id="i-asterisk" viewBox="0 0 100 100"><path d="M50 8v84M13.6 29l72.8 42M13.6 71l72.8-42" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 100 100"><path d="M60 3 14 58h29l-8 39 51-60H55z"/></symbol>
+    <symbol id="i-arrow-out" viewBox="0 0 24 24"><path d="M6 18 18 6M8 6h10v10" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 4v16M5 13l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner wrap">
+      <a class="logo" href="#inicio" aria-label="WIZEP, voltar ao início">WIZEP</a>
+
+      <nav class="nav__links" aria-label="Navegação principal">
+        <a href="#quem-somos">Quem somos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a class="btn btn--ink btn--sm nav__cta" href="https://wa.me/5537998409492" data-contact="principal">Fale com a gente</a>
+
+      <button class="nav__toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu mobile: tela cheia -->
+  <div class="menu" id="mobileMenu" hidden>
+    <nav class="menu__links" aria-label="Navegação mobile">
+      <a href="#quem-somos" style="--i:0">Quem somos</a>
+      <a href="#servicos" style="--i:1">Serviços</a>
+      <a href="#portfolio" style="--i:2">Portfólio</a>
+      <a href="#avaliacoes" style="--i:3">Avaliações</a>
+      <a href="#faq" style="--i:4">FAQ</a>
+    </nav>
+    <a class="btn btn--yellow menu__cta" href="https://wa.me/5537998409492" data-contact="principal">Fale com a gente</a>
+    <svg class="menu__burst" aria-hidden="true"><use href="#i-burst"/></svg>
+    <svg class="menu__ast" aria-hidden="true"><use href="#i-asterisk"/></svg>
+  </div>
+
+  <main>
+
+    <!-- ========== 1. HERO ========== -->
+    <section class="hero" id="inicio">
+      <div class="hero__stage wrap">
+
+        <div class="hero__dots" aria-hidden="true"></div>
+        <svg class="hero__ast" data-parallax="-0.08" aria-hidden="true"><use href="#i-asterisk"/></svg>
+
+        <h1 class="hero__title">
+          <span class="hl hl--1">Seu negócio</span>
+          <span class="hl hl--2"><em class="script">merece</em> uma</span>
+          <span class="hl hl--3">presença <b>digital</b></span>
+          <span class="hl hl--4"><span class="hero__stamp">à altura.</span>
+            <svg class="hero__arrow" viewBox="0 0 460 120" fill="none" aria-hidden="true">
+              <path d="M6 92c38 16 78 8 94-14 12-17-7-34-20-18-12 16 13 40 62 32 96-16 196-30 306-58" stroke="#0E0E10" stroke-width="5" stroke-linecap="round"/>
+              <path d="M416 12l34 21-27 30" stroke="#0E0E10" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </h1>
+
+        <div class="hero__foot">
+          <p class="hero__lead">Criamos experiências digitais, desenvolvemos marcas e transformamos ideias em presença digital.</p>
+          <div class="hero__ctas">
+            <a class="btn btn--pink" href="#portfolio">Ver os projetos
+              <svg class="btn__icon" aria-hidden="true"><use href="#i-arrow-down"/></svg>
+            </a>
+            <a class="btn btn--white" href="#contato">Entrar em contato</a>
+          </div>
+        </div>
+
+        <!-- Régua de crescimento: o conceito visual de "à altura" -->
+        <div class="ruler" aria-hidden="true">
+          <div class="ruler__bar"></div>
+          <span class="ruler__mark ruler__mark--1" style="--pos:12%">só o perfil</span>
+          <span class="ruler__mark ruler__mark--2" style="--pos:36%">site no ar</span>
+          <span class="ruler__mark ruler__mark--3" style="--pos:59%">loja aberta</span>
+          <span class="ruler__mark ruler__mark--4" style="--pos:80%">marca própria</span>
+        </div>
+
+        <!-- Selo giratório -->
+        <div class="seal" data-parallax="0.05" aria-hidden="true">
+          <svg class="seal__spin" viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="97" fill="#2B3BFF" stroke="#0E0E10" stroke-width="4"/>
+            <defs><path id="sealPath" d="M100 100m-72 0a72 72 0 1 1 144 0a72 72 0 1 1-144 0"/></defs>
+            <text class="seal__text"><textPath href="#sealPath" textLength="448">DESIGN ✦ TECNOLOGIA ✦ CRIATIVIDADE ✦</textPath></text>
+          </svg>
+          <svg class="seal__core" aria-hidden="true"><use href="#i-spark"/></svg>
+        </div>
+      </div>
+
+      <!-- Fita -->
+      <div class="tape" aria-hidden="true">
+        <div class="tape__track">
+          <span>Sites institucionais</span><i></i><span>Landing pages</span><i></i><span>Lojas virtuais</span><i></i><span>Identidade visual</span><i></i>
+          <span>Sites institucionais</span><i></i><span>Landing pages</span><i></i><span>Lojas virtuais</span><i></i><span>Identidade visual</span><i></i>
+          <span>Sites institucionais</span><i></i><span>Landing pages</span><i></i><span>Lojas virtuais</span><i></i><span>Identidade visual</span><i></i>
+          <span>Sites institucionais</span><i></i><span>Landing pages</span><i></i><span>Lojas virtuais</span><i></i><span>Identidade visual</span><i></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 2. QUEM SOMOS ========== -->
+    <section class="about section" id="quem-somos">
+      <div class="wrap">
+        <p class="label label--pink reveal">Quem somos</p>
+
+        <h2 class="about__statement display reveal">
+          Empresa boa não pode parecer
+          <em class="script about__word">improvisada
+            <svg viewBox="0 0 420 34" fill="none" preserveAspectRatio="none" aria-hidden="true"><path d="M5 22c60-14 112-17 170-10 58 8 104 12 240-6" stroke="#FFD400" stroke-width="9" stroke-linecap="round"/></svg>
+          </em>
+          na internet.
+        </h2>
+
+        <div class="about__grid">
+          <!-- Equação da marca -->
+          <div class="equation" aria-label="Design, mais tecnologia, mais criatividade, igual a presença digital">
+            <span class="eq eq--design pop" style="--r:-7deg">Design</span>
+            <span class="eq__plus pop" style="--d:.08s">+</span>
+            <span class="eq eq--tech pop" style="--r:3deg;--d:.14s">Tecnologia</span>
+            <span class="eq__plus pop" style="--d:.2s">+</span>
+            <span class="eq eq--crea pop" style="--r:-4deg;--d:.26s">
+              <svg aria-hidden="true"><use href="#i-burst"/></svg><b>Criatividade</b>
+            </span>
+            <span class="eq__result pop script" style="--d:.34s">= presença digital</span>
+          </div>
+
+          <div class="about__text">
+            <p class="about__lead reveal">A WIZEP é uma agência de criação e desenvolvimento digital. Na prática, é o estúdio que cuida de como o seu negócio aparece: da marca ao site no ar.</p>
+
+            <div class="about__cols">
+              <div class="reveal" style="--d:.08s">
+                <h3 class="mini">Para quem</h3>
+                <p>Empresas, pequenos negócios, empreendedores e profissionais autônomos que querem ser levados a sério na internet.</p>
+              </div>
+              <div class="reveal" style="--d:.16s">
+                <h3 class="mini">O que a gente acredita</h3>
+                <p>Presença digital bem-feita não é privilégio de marca grande. É questão de estratégia, cuidado e identidade.</p>
+              </div>
+            </div>
+
+            <div class="flow reveal" style="--d:.2s">
+              <h3 class="mini">Como a gente trabalha</h3>
+              <ol class="flow__steps">
+                <li>Entender o negócio</li>
+                <li>Criar a direção</li>
+                <li>Desenvolver</li>
+                <li>Colocar no ar</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <blockquote class="about__quote reveal">
+          <svg class="about__quote-star" aria-hidden="true"><use href="#i-spark"/></svg>
+          <p>Cada projeto com a cara de quem contrata, nunca com a cara de um molde.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ========== 3. SERVIÇOS ========== -->
+    <section class="services section" id="servicos">
+      <div class="wrap">
+        <header class="services__head">
+          <p class="label label--lime reveal">Nossos serviços</p>
+          <h2 class="services__title display reveal">Quatro formas de <span class="services__mark">aparecer</span> do jeito certo.</h2>
+        </header>
+
+        <div class="services__top">
+          <!-- 01 Sites institucionais -->
+          <article class="svc svc--site reveal">
+            <div class="svc--site__copy">
+              <h3 class="svc__name display">Sites<br>institucionais</h3>
+              <p>A casa do seu negócio na internet: quem você é, o que faz e como falar com você, em um site com identidade própria.</p>
+            </div>
+            <svg class="svc--site__art" viewBox="0 0 520 400" aria-hidden="true">
+              <rect x="22" y="24" width="480" height="360" fill="#0E0E10"/>
+              <rect x="8" y="8" width="480" height="360" fill="#fff" stroke="#0E0E10" stroke-width="5"/>
+              <path d="M8 50h480" stroke="#0E0E10" stroke-width="5"/>
+              <circle cx="34" cy="29" r="9" fill="#FF3D9A" stroke="#0E0E10" stroke-width="4"/>
+              <circle cx="62" cy="29" r="9" fill="#FFD400" stroke="#0E0E10" stroke-width="4"/>
+              <circle cx="90" cy="29" r="9" fill="#C6F135" stroke="#0E0E10" stroke-width="4"/>
+              <rect x="36" y="78" width="220" height="30" fill="#0E0E10"/>
+              <rect x="36" y="118" width="160" height="30" fill="#0E0E10"/>
+              <rect x="36" y="168" width="200" height="10" fill="#0E0E10" opacity=".35"/>
+              <rect x="36" y="188" width="170" height="10" fill="#0E0E10" opacity=".35"/>
+              <rect x="36" y="222" width="110" height="38" rx="19" fill="#FF3D9A" stroke="#0E0E10" stroke-width="4"/>
+              <rect x="290" y="78" width="170" height="182" fill="#FFD400" stroke="#0E0E10" stroke-width="4"/>
+              <use href="#i-burst" x="320" y="115" width="110" height="110" fill="#FF5A1F" stroke="#0E0E10" stroke-width="8" stroke-linejoin="round"/>
+              <rect x="36" y="290" width="130" height="50" fill="#C6F135" stroke="#0E0E10" stroke-width="4"/>
+              <rect x="183" y="290" width="130" height="50" fill="#fff" stroke="#0E0E10" stroke-width="4"/>
+              <rect x="330" y="290" width="130" height="50" fill="#2B3BFF" stroke="#0E0E10" stroke-width="4"/>
+            </svg>
+          </article>
+
+          <!-- 02 Landing pages -->
+          <article class="svc svc--lp reveal" style="--d:.1s">
+            <svg class="svc--lp__art" viewBox="0 0 340 340" aria-hidden="true">
+              <circle cx="170" cy="170" r="166" fill="#FF3D9A"/>
+              <g fill="none" stroke="#0E0E10" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M48 96c20 26 44 46 66 58"/><path d="M92 146l23 8-6-25"/>
+                <path d="M292 96c-20 26-44 46-66 58"/><path d="M248 146l-23 8 6-25"/>
+                <path d="M170 34v76"/><path d="M152 92l18 20 18-20"/>
+              </g>
+              <rect x="66" y="176" width="208" height="76" rx="38" fill="#0E0E10"/>
+              <rect x="66" y="166" width="208" height="76" rx="38" fill="#FFD400" stroke="#0E0E10" stroke-width="5"/>
+              <text x="170" y="218" text-anchor="middle" class="svg-display" font-size="40">QUERO!</text>
+              <path d="M232 226l18 62 12-22 25 25 14-14-25-25 22-12z" fill="#fff" stroke="#0E0E10" stroke-width="5" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="svc__name display">Landing pages</h3>
+            <p>Uma página, um objetivo. Feita para campanhas, lançamentos e ofertas que precisam levar a pessoa direto à ação.</p>
+          </article>
+        </div>
+
+        <!-- 03 Lojas virtuais -->
+        <article class="svc svc--shop reveal">
+          <svg class="svc--shop__art" viewBox="0 0 560 460" aria-hidden="true">
+            <path d="M92 90C170 8 330-14 440 50c96 56 134 176 76 268-58 94-210 150-338 112C58 394-4 268 14 186 22 148 56 128 92 90Z" fill="#FFD400"/>
+            <path d="M210 150c0-92 130-92 130 0" fill="none" stroke="#0E0E10" stroke-width="10" stroke-linecap="round"/>
+            <path d="M152 162l266-4 24 244-312 6z" fill="#0E0E10" transform="translate(10 10)"/>
+            <path d="M152 162l266-4 24 244-312 6z" fill="#FF5A1F" stroke="#0E0E10" stroke-width="6" stroke-linejoin="round"/>
+            <circle cx="244" cy="256" r="11" fill="#0E0E10"/>
+            <circle cx="326" cy="254" r="11" fill="#0E0E10"/>
+            <path d="M228 296c18 40 96 40 114-2" fill="none" stroke="#0E0E10" stroke-width="9" stroke-linecap="round"/>
+            <g transform="rotate(14 462 150)">
+              <path d="M406 106h106l26 44-26 44H406z" fill="#0E0E10" transform="translate(6 8)"/>
+              <path d="M406 106h106l26 44-26 44H406z" fill="#C6F135" stroke="#0E0E10" stroke-width="5" stroke-linejoin="round"/>
+              <circle cx="508" cy="150" r="9" fill="#fff" stroke="#0E0E10" stroke-width="4"/>
+              <text x="450" y="166" text-anchor="middle" class="svg-script" font-size="40">oba!</text>
+            </g>
+            <use href="#i-spark" x="60" y="300" width="84" height="84" fill="#2B3BFF" stroke="#0E0E10" stroke-width="5" stroke-linejoin="round"/>
+          </svg>
+          <div class="svc--shop__copy">
+            <h3 class="svc__name display">Lojas virtuais</h3>
+            <p>Seus produtos à venda em uma loja com a cara da sua marca, pensada para ser simples de navegar e de comprar.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- 04 Identidade visual: faixa inteira -->
+      <article class="svc svc--brand">
+        <svg class="wave wave--top" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60V30c60-34 120-34 180 0s120 34 180 0 120-34 180 0 120 34 180 0 120-34 180 0 120 34 180 0 120-34 180 0 120 34 180 0v30z"/></svg>
+        <div class="svc--brand__in wrap">
+          <div class="svc--brand__copy reveal">
+            <h3 class="svc__name svc__name--xl display">Identidade visual</h3>
+            <p>Logo, cores, tipografia e o jeito de aplicar tudo isso. O conjunto que faz o seu negócio ser reconhecido antes mesmo de ler o nome.</p>
+          </div>
+          <svg class="svc--brand__art reveal" style="--d:.12s" viewBox="0 0 620 420" aria-hidden="true">
+            <!-- Construção do logo -->
+            <g transform="rotate(-4 200 200)">
+              <rect x="50" y="50" width="310" height="310" fill="#0E0E10"/>
+              <rect x="38" y="38" width="310" height="310" fill="#2B3BFF" stroke="#0E0E10" stroke-width="5"/>
+              <g fill="none" stroke="#fff" stroke-width="2" opacity=".55">
+                <path d="M38 193h310M193 38v310M38 38l310 310M348 38 38 348"/>
+                <circle cx="193" cy="193" r="125"/>
+              </g>
+              <text x="193" y="262" text-anchor="middle" class="svg-display" font-size="210" fill="#fff" style="fill:#fff">W</text>
+              <g fill="#FFD400" stroke="#0E0E10" stroke-width="3">
+                <rect x="60" y="60" width="16" height="16"/><rect x="310" y="60" width="16" height="16"/>
+                <rect x="60" y="310" width="16" height="16"/><rect x="310" y="310" width="16" height="16"/>
+              </g>
+            </g>
+            <!-- Paleta -->
+            <g stroke="#0E0E10" stroke-width="5">
+              <circle cx="430" cy="92" r="58" fill="#FF3D9A"/>
+              <circle cx="510" cy="92" r="58" fill="#FFD400"/>
+              <circle cx="470" cy="166" r="58" fill="#FF5A1F"/>
+            </g>
+            <!-- Tipografia -->
+            <g transform="rotate(5 490 310)">
+              <rect x="412" y="252" width="176" height="130" fill="#0E0E10"/>
+              <rect x="402" y="242" width="176" height="130" fill="#fff" stroke="#0E0E10" stroke-width="5"/>
+              <text x="490" y="330" text-anchor="middle" class="svg-display" font-size="84">Aa</text>
+            </g>
+          </svg>
+        </div>
+        <svg class="wave wave--bottom" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0v30c60 34 120 34 180 0s120-34 180 0 120 34 180 0 120-34 180 0 120 34 180 0 120-34 180 0 120 34 180 0 120-34 180 0V0z"/></svg>
+      </article>
+    </section>
+
+    <!-- ========== 4. PORTFÓLIO ==========
+         Para trocar uma imagem, substitua o arquivo em assets/portfolio/ mantendo o mesmo nome.
+         Formato recomendado: 1600 x 900 px. -->
+    <section class="work section" id="portfolio">
+      <div class="work__head wrap">
+        <p class="work__kicker script reveal">coisa que a gente fez:</p>
+        <h2 class="work__title display reveal">Portfólio</h2>
+      </div>
+
+      <ol class="work__list wrap">
+        <li class="project reveal" style="--shadow:#FF3D9A">
+          <a class="project__link" href="https://luisreis-dev.github.io/pulse/" target="_blank" rel="noopener noreferrer" aria-label="Pulse: abrir o site em nova aba">
+            <figure class="project__shot">
+              <img src="assets/portfolio/01-pulse.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="Primeira dobra do site Pulse, gel energético para quem vive em movimento">
+            </figure>
+            <span class="project__meta"><span class="project__name">Pulse</span><svg class="project__go" aria-hidden="true"><use href="#i-arrow-out"/></svg></span>
+          </a>
+        </li>
+        <li class="project reveal" style="--shadow:#2B3BFF">
+          <a class="project__link" href="https://luisreis-dev.github.io/serraemar/" target="_blank" rel="noopener noreferrer" aria-label="Pousada Serra e Mar: abrir o site em nova aba">
+            <figure class="project__shot">
+              <img src="assets/portfolio/02-serra-e-mar.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="Primeira dobra do site da Pousada Serra e Mar, com piscina cercada por mata e montanhas">
+            </figure>
+            <span class="project__meta"><span class="project__name">Pousada Serra e Mar</span><svg class="project__go" aria-hidden="true"><use href="#i-arrow-out"/></svg></span>
+          </a>
+        </li>
+        <li class="project reveal" style="--shadow:#FFD400">
+          <a class="project__link" href="https://luisreis-dev.github.io/cicatrInk/" target="_blank" rel="noopener noreferrer" aria-label="CicatrInk: abrir o site em nova aba">
+            <figure class="project__shot">
+              <img src="assets/portfolio/03-cicatrink.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="Primeira dobra do site do projeto CicatrInk, estúdio de tatuagem em preto e branco com título em vermelho">
+            </figure>
+            <span class="project__meta"><span class="project__name">CicatrInk</span><svg class="project__go" aria-hidden="true"><use href="#i-arrow-out"/></svg></span>
+          </a>
+        </li>
+        <li class="project reveal" style="--shadow:#C6F135;--pos:80%">
+          <a class="project__link" href="https://luisreis-dev.github.io/arquitetajulia/" target="_blank" rel="noopener noreferrer" aria-label="Júlia Martins Arquitetura: abrir o site em nova aba">
+            <figure class="project__shot">
+              <img src="assets/portfolio/04-julia-martins.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="Primeira dobra do site Júlia Martins Arquitetura, com uma cozinha de tons escuros">
+            </figure>
+            <span class="project__meta"><span class="project__name">Júlia Martins Arquitetura</span><svg class="project__go" aria-hidden="true"><use href="#i-arrow-out"/></svg></span>
+          </a>
+        </li>
+        <li class="project reveal" style="--shadow:#FF5A1F">
+          <a class="project__link" href="https://luisreis-dev.github.io/tommaior/" target="_blank" rel="noopener noreferrer" aria-label="Tom Maior: abrir o site em nova aba">
+            <figure class="project__shot">
+              <img src="assets/portfolio/05-tom-maior.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="Primeira dobra do site da escola de música Tom Maior, com mãos tocando piano">
+            </figure>
+            <span class="project__meta"><span class="project__name">Tom Maior</span><svg class="project__go" aria-hidden="true"><use href="#i-arrow-out"/></svg></span>
+          </a>
+        </li>
+        <li class="project reveal" style="--shadow:#F12E81;--pos:45%">
+          <a class="project__link" href="faisca.html" data-cursor="Ver projeto" aria-label="Faísca: ver a apresentação da identidade visual">
+            <figure class="project__shot">
+              <img src="faisca_idvisual/sacolas.png" width="1536" height="1024" loading="lazy" decoding="async" alt="Sacolas da Faísca em laranja, rosa e amarelo com o logotipo da marca">
+            </figure>
+            <span class="project__meta"><span class="project__name">Faísca</span><span class="project__desc">Identidade visual para uma marca de velas aromáticas</span><svg class="project__go" aria-hidden="true"><use href="#i-arrow-out"/></svg></span>
+          </a>
+        </li>
+      </ol>
+
+      <!-- Etiqueta que acompanha o ponteiro no desktop -->
+      <div class="cursor-tag" id="cursorTag" aria-hidden="true">Ver site <svg><use href="#i-arrow-out"/></svg></div>
+    </section>
+
+    <!-- ========== 5. AVALIAÇÕES ==========
+         DEPOIMENTOS ILUSTRATIVOS. Ao trocar pelos reais, remova também o aviso .reviews__foot. -->
+    <section class="reviews section" id="avaliacoes">
+      <svg class="reviews__scribble" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true">
+        <path d="M-60 330C150 90 390 60 430 240S210 560 360 640s400-180 520-330 300-190 330-50-180 330-20 420 240-30 330-110" stroke="#ECEBFF" stroke-width="54" stroke-linecap="round"/>
+      </svg>
+
+      <div class="wrap reviews__in">
+        <header class="reviews__head">
+          <h2 class="reviews__title display reveal">Avaliações</h2>
+        </header>
+
+        <div class="stickers">
+          <figure class="sticker sticker--yellow s1 pop" style="--r:-4deg">
+            <blockquote>“O site novo deixou o meu negócio com uma apresentação muito mais clara.”</blockquote>
+            <figcaption><b>Camila Rocha</b><span>Site institucional</span></figcaption>
+          </figure>
+
+          <figure class="sticker sticker--pink s2 pop" style="--r:2.5deg;--d:.08s">
+            <blockquote>“A marca finalmente ficou com a nossa cara.”</blockquote>
+            <figcaption><b>Rafael Mendes</b><span>Identidade visual</span></figcaption>
+          </figure>
+
+          <figure class="sticker sticker--blue s3 pop" style="--r:-1.8deg;--d:.16s">
+            <blockquote>“Atendimento próximo do começo ao fim, sem complicação.”</blockquote>
+            <figcaption><b>Juliana Prado</b><span>Landing page</span></figcaption>
+            <svg class="sticker__deco sticker__deco--bolt" aria-hidden="true"><use href="#i-bolt"/></svg>
+          </figure>
+
+          <figure class="sticker sticker--lime s4 pop" style="--r:3.5deg">
+            <blockquote>“Montar a loja virtual foi muito mais simples do que eu imaginava.”</blockquote>
+            <figcaption><b>Thiago Moura</b><span>Loja virtual</span></figcaption>
+          </figure>
+
+          <figure class="sticker sticker--orange s5 pop" style="--r:-3deg;--d:.08s">
+            <blockquote>“Entenderam o que eu precisava logo na primeira conversa.”</blockquote>
+            <figcaption><b>Fernanda Lima</b><span>Site institucional</span></figcaption>
+            <svg class="sticker__deco sticker__deco--spark" aria-hidden="true"><use href="#i-spark"/></svg>
+          </figure>
+
+          <figure class="sticker sticker--white s6 pop" style="--r:1.6deg;--d:.16s">
+            <blockquote>“Criativo sem perder o profissionalismo.”</blockquote>
+            <figcaption><b>Bruno Carvalho</b><span>Identidade visual</span></figcaption>
+          </figure>
+        </div>
+
+        <p class="reviews__foot">Depoimentos ilustrativos.</p>
+      </div>
+    </section>
+
+    <!-- ========== 6. FAQ ========== -->
+    <section class="faq section" id="faq">
+      <div class="wrap faq__grid">
+        <header class="faq__head">
+          <p class="label label--orange reveal">FAQ</p>
+          <h2 class="faq__title display reveal">Ficou alguma <em class="script">dúvida?</em></h2>
+          <p class="faq__note reveal">Respostas gerais. Os detalhes de cada projeto ficam combinados na proposta.</p>
+          <svg class="faq__ast" aria-hidden="true"><use href="#i-asterisk"/></svg>
+        </header>
+
+        <div class="accordion" id="accordion">
+          <div class="qa is-open">
+            <h3><button class="qa__q" type="button" aria-expanded="true" aria-controls="qa1" id="qa1-b"><span>Quais serviços a WIZEP oferece?</span><i class="qa__icon" aria-hidden="true"></i></button></h3>
+            <div class="qa__a" id="qa1" role="region" aria-labelledby="qa1-b"><div><p>Criação de sites institucionais, landing pages, lojas virtuais e desenvolvimento de identidade visual. Dá para contratar um deles ou combinar mais de um no mesmo projeto.</p></div></div>
+          </div>
+          <div class="qa">
+            <h3><button class="qa__q" type="button" aria-expanded="false" aria-controls="qa2" id="qa2-b"><span>Qual é a diferença entre site institucional e landing page?</span><i class="qa__icon" aria-hidden="true"></i></button></h3>
+            <div class="qa__a" id="qa2" role="region" aria-labelledby="qa2-b"><div><p>O site institucional apresenta o negócio por inteiro, com várias informações. A landing page tem um único objetivo, como divulgar uma oferta ou captar contatos de uma campanha.</p></div></div>
+          </div>
+          <div class="qa">
+            <h3><button class="qa__q" type="button" aria-expanded="false" aria-controls="qa3" id="qa3-b"><span>Como funciona um projeto?</span><i class="qa__icon" aria-hidden="true"></i></button></h3>
+            <div class="qa__a" id="qa3" role="region" aria-labelledby="qa3-b"><div><p>Começa com uma conversa para entender o negócio. Depois vêm a proposta, a criação da direção visual, o desenvolvimento e a publicação.</p></div></div>
+          </div>
+          <div class="qa">
+            <h3><button class="qa__q" type="button" aria-expanded="false" aria-controls="qa4" id="qa4-b"><span>Quanto tempo leva para ficar pronto?</span><i class="qa__icon" aria-hidden="true"></i></button></h3>
+            <div class="qa__a" id="qa4" role="region" aria-labelledby="qa4-b"><div><p>Depende do tamanho e do tipo de projeto. O prazo é informado na proposta, antes de qualquer trabalho começar.</p></div></div>
+          </div>
+          <div class="qa">
+            <h3><button class="qa__q" type="button" aria-expanded="false" aria-controls="qa5" id="qa5-b"><span>Como faço para contratar?</span><i class="qa__icon" aria-hidden="true"></i></button></h3>
+            <div class="qa__a" id="qa5" role="region" aria-labelledby="qa5-b"><div><p>Entre em contato contando o que você precisa. Com isso, a WIZEP prepara uma proposta com escopo, prazo e valor para você avaliar.</p></div></div>
+          </div>
+          <div class="qa">
+            <h3><button class="qa__q" type="button" aria-expanded="false" aria-controls="qa6" id="qa6-b"><span>Preciso já ter logo e textos prontos?</span><i class="qa__icon" aria-hidden="true"></i></button></h3>
+            <div class="qa__a" id="qa6" role="region" aria-labelledby="qa6-b"><div><p>Não é obrigatório. Se o negócio ainda não tem marca, a identidade visual pode entrar no mesmo projeto. O que falta é definido logo na primeira conversa.</p></div></div>
+          </div>
+          <div class="qa">
+            <h3><button class="qa__q" type="button" aria-expanded="false" aria-controls="qa7" id="qa7-b"><span>Como é o atendimento?</span><i class="qa__icon" aria-hidden="true"></i></button></h3>
+            <div class="qa__a" id="qa7" role="region" aria-labelledby="qa7-b"><div><p>Pelos canais de contato informados nesta página. A forma de acompanhar o projeto é combinada com você no início do trabalho.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 7. CTA FINAL ========== -->
+    <section class="cta" id="contato">
+      <svg class="wave wave--cta" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60V30c60-34 120-34 180 0s120 34 180 0 120-34 180 0 120 34 180 0 120-34 180 0 120 34 180 0 120-34 180 0 120 34 180 0v30z"/></svg>
+
+      <div class="cta__strip cta__strip--a" aria-hidden="true">tire do papel ✦ tire do papel ✦ tire do papel ✦ tire do papel ✦ tire do papel ✦ tire do papel</div>
+
+      <div class="cta__in wrap">
+        <h2 class="cta__title display reveal">Sua próxima <em class="cta__big script">grande ideia</em> <span class="cta__end">começa aqui.</span></h2>
+
+        <div class="cta__row reveal" style="--d:.12s">
+          <p class="cta__text">Conta para a gente o que você quer tirar do papel. A primeira conversa serve justamente para isso.</p>
+          <a class="btn btn--yellow btn--xl" href="https://wa.me/5537998409492" data-contact="principal">Quero começar meu projeto
+            <svg class="btn__icon" aria-hidden="true"><use href="#i-arrow-out"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <svg class="cta__bulb pop" style="--r:10deg" viewBox="0 0 220 300" aria-hidden="true">
+        <g fill="none" stroke="#FFD400" stroke-width="9" stroke-linecap="round">
+          <path d="M110 6v26M28 42l20 20M192 42l-20 20M4 118h26M190 118h26"/>
+        </g>
+        <path d="M110 48c-44 0-74 32-74 72 0 30 16 46 28 62 8 11 10 22 10 34h72c0-12 2-23 10-34 12-16 28-32 28-62 0-40-30-72-74-72Z" fill="#FFD400" stroke="#0E0E10" stroke-width="6"/>
+        <circle cx="86" cy="122" r="8" fill="#0E0E10"/><circle cx="134" cy="122" r="8" fill="#0E0E10"/>
+        <path d="M80 148c12 22 48 22 60 0" fill="none" stroke="#0E0E10" stroke-width="7" stroke-linecap="round"/>
+        <path d="M74 216h72v44a14 14 0 0 1-14 14H88a14 14 0 0 1-14-14z" fill="#fff" stroke="#0E0E10" stroke-width="6"/>
+        <path d="M74 236h72M74 254h72" stroke="#0E0E10" stroke-width="6"/>
+      </svg>
+      <svg class="cta__spark" aria-hidden="true"><use href="#i-spark"/></svg>
+    </section>
+  </main>
+
+  <!-- ========== 8. RODAPÉ ==========
+       Canais de contato e redes: preencha o objeto CONTATO no início do script.js. -->
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div class="footer__brand">
+        <a class="logo logo--lg" href="#inicio" aria-label="WIZEP, voltar ao início">WIZEP</a>
+        <p>Agência de criação e desenvolvimento digital. Design, tecnologia e criatividade para transformar negócios em experiências digitais.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Links do rodapé">
+        <h3 class="mini">Navegação</h3>
+        <a href="#quem-somos">Quem somos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="footer__col">
+        <h3 class="mini">Redes sociais</h3>
+        <a href="#contato" data-contact="instagram" data-label="Instagram">Instagram <small>(a adicionar)</small></a>
+        <a href="#contato" data-contact="linkedin" data-label="LinkedIn">LinkedIn <small>(a adicionar)</small></a>
+        <a href="#contato" data-contact="behance" data-label="Behance">Behance <small>(a adicionar)</small></a>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="mini">Contato</h3>
+        <a href="https://wa.me/5537998409492" data-contact="whatsapp" data-label="WhatsApp">WhatsApp</a>
+        <a href="#contato" data-contact="email" data-label="E-mail">E-mail <small>(a adicionar)</small></a>
+      </div>
+    </div>
+
+    <div class="wrap footer__legal">
+      <span>© <span id="year">2026</span> WIZEP. Todos os direitos reservados.</span>
+      <a href="#inicio" class="footer__top">Voltar ao topo <svg aria-hidden="true"><use href="#i-arrow-out"/></svg></a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
