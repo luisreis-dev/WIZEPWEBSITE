@@ -1,6 +1,6 @@
 /* ==========================================================================
    WIZEP | style.css
-   Identidade visual, tipografia, layouts e componentes (base: desktop).
+   Cores, tipografia, layouts e componentes (base: desktop).
    Adaptações para tablet e celular ficam em responsive.css.
    ========================================================================== */
 
@@ -658,7 +658,6 @@ em { font-style: normal; }
 }
 
 .svc__name { font-size: clamp(44px, 5.2vw, 92px); margin-bottom: 18px; }
-.svc__name--xl { font-size: clamp(56px, 8.4vw, 160px); }
 .svc p { max-width: 30em; }
 
 .services__top {
@@ -724,12 +723,6 @@ em { font-style: normal; }
 .svc--shop:hover .svc--shop__art { rotate: 2deg; }
 .svc--shop .svc__name { font-size: clamp(56px, 7.4vw, 136px); }
 
-/* 04 */
-.svc--brand {
-  position: relative;
-  background: var(--lime);
-  margin-top: clamp(72px, 8vw, 128px);
-}
 .wave {
   position: absolute;
   left: 0;
@@ -738,17 +731,6 @@ em { font-style: normal; }
   fill: var(--lime);
   overflow: visible;
 }
-.wave--top { bottom: calc(100% - 1px); }
-.wave--bottom { top: calc(100% - 1px); }
-
-.svc--brand__in {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(28px, 5vw, 80px);
-  align-items: center;
-  padding-block: clamp(56px, 6vw, 100px);
-}
-.svc--brand__art { width: 100%; height: auto; overflow: visible; }
 
 /* --- 4. Portfólio --- */
 .work { position: relative; padding-top: calc(var(--section) + 40px); }

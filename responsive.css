@@ -180,9 +180,6 @@
   .svc--lp .svc__name { align-self: end; margin-bottom: 8px; }
   .svc--lp p { align-self: start; }
   .svc--shop { margin-left: 0; margin-top: 64px; }
-  .svc--brand__in { grid-template-columns: 1fr; }
-  .svc--brand__art { max-width: 620px; justify-self: end; }
-  .svc__name--xl { font-size: 14vw; }
 
   /* Portfólio: imagens sangram até a borda */
   .work__list { padding-inline: 16px; }
@@ -283,9 +280,6 @@
   .svc--shop { display: block; margin-top: 64px; }
   .svc--shop .svc__name { font-size: 16vw; }
   .svc--shop__art { width: 100%; margin-bottom: 20px; }
-  .svc--brand__art { width: 100%; }
-  .svc--brand__in { padding-block: 44px; }
-  .svc__name--xl { font-size: 17.5vw; }
 
   /* Portfólio */
   .work { padding-top: 124px; }
